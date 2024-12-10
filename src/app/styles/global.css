@@ -1,0 +1,384 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Add this to your globals.css */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.product-swiper {
+    padding: 10px;
+}
+
+/* Footer Component Styles */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-top-left,
+  .footer-top-right,
+  .footer-top-center {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .footer-top-left,
+  .footer-top-center {
+    max-width: 250px;
+  }
+  
+  .footer-top-right {
+    text-align: right;
+    max-width: 250px;
+  }
+  
+  .footer-top p {
+    font-weight: bold;
+  }
+  
+  .footer-top ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-top ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .footer-top ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-top ul li a:hover {
+    color: #007bff;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  .footer-top-right i {
+    font-size: 24px;
+    margin-right: 15px;
+  }
+  
+  .footer-top-left a,
+  .footer-top-center a {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-top-left a:hover,
+  .footer-top-center a:hover {
+    color: #007bff;
+  }
+
+  .bi {
+    font-size: 2rem; /* Adjust size */
+    color: #000; /* Set color */
+  }
+
+  /* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  font-size: 14px;
+}
+
+/* Product Page */
+.product-page {
+  padding: 20px;
+}
+
+.breadcrumb {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.product-container {
+  display: flex;
+  gap: 20px;
+}
+
+.product-images {
+  width: 40%;
+}
+
+.product-images ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-images ul li img {
+  width: 50px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.main-image {
+  width: 100%;
+}
+
+.product-info {
+  width: 60%;
+}
+
+.price {
+  color: green;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dimensions span {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.add-to-cart {
+  background-color: #00c3ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.product-description {
+  margin-top: 30px;
+}
+
+.additional-info {
+  margin-top: 20px;
+}
+
+.additional-info button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Subscription Section Styling */
+.subscription-section {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+.subscription-section h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.subscription-section p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.subscription-form input {
+  max-width: 300px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.subscription-form button {
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+/* Footer Adjustments */
+.footer {
+  background-color: #fff;
+  padding: 30px 0;
+}
+
+.footer-top-left, .footer-top-center, .footer-top-right {
+  margin-bottom: 20px;
+}
+
+.footer-top-follow p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-top-follow ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-top-follow ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .footer-top-left, .footer-top-center, .footer-top-right {
+    text-align: center;
+  }
+}
+
+
+
+/* Highlight Section Icon Styling */
+.highlight-item img.highlight-icon {
+  max-width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Subscription Section Styling */
+.subscription-highlight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.sofa-image {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.subscription-highlight button {
+  background-color: turquoise;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.subscription-highlight input {
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Footer Styling */
+.footer-top {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.footer-top-left,
+.footer-top-center,
+.footer-top-right {
+  margin-bottom: 15px;
+}
+
+.footer-top-follow {
+  margin-top: 15px;
+}
+
+.footer-top-follow ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.footer-top-follow ul li {
+  margin-right: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .subscription-highlight {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sofa-image {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .subscription-highlight button,
+  .subscription-highlight input {
+    width: 100%;
+  }
+}
+/* Ensure all highlight items have a uniform size */
+.highlight-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #ffffff; /* Optional background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+  transition: transform 0.3s ease-in-out;
+}
+
+.highlight-item:hover {
+  transform: translateY(-5px); /* Hover effect */
+}
+
+/* Ensure the images in the highlight section are uniform in size and shape */
+.highlight-icon {
+  width: 100px;  /* Fixed width */
+  height: 100px; /* Fixed height to make it square */
+  object-fit: contain; /* Ensures the images maintain their aspect ratio within the box */
+  border-radius: 50%; /* Optional: use this for a circular shape */
+  margin-bottom: 15px; /* Space between image and text */
+}
+
+/* Optional: Style for the title and description under each icon */
+.highlight-item h5 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.highlight-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+  
